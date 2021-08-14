@@ -1,0 +1,814 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --col1: #28b8d8;
+    --col2: #444444;
+    --col3: #666;
+    --col4: #999;
+    --bgcol1: #2c2c2c;
+    --bgcol2: #373737;
+    --fot1: 'Roboto', sans-serif;
+    --fot2: 'Roboto Condensed', sans-serif;
+    --fot3: 'Roboto Slab', serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+/* =================
+    Common Css Ends
+================== */
+
+
+/* spacing Css */
+
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.m-30 {
+    margin: 0 30px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.p-25 {
+    padding: 25px 0;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+/* =================
+    Navbar Css sTART
+================== */
+
+#navbar {
+    width: 100%;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    z-index: 99999;
+}
+
+
+#navbar .navbar {
+    height: 90px;
+    display: flex;
+}
+
+#navbar .navbar .logo {
+    width: 100px;
+    height: 100%;
+}
+
+#navbar .navbar .logo a {
+    line-height: 90px;
+}
+
+#navbar .navbar .logo a img {
+    width: 100%;
+}
+
+#navbar .navbar .menu-list {
+    width: 950px;
+}
+
+#navbar .navbar .menu-list ul {
+    width: 950px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#navbar .navbar .menu-list ul li a {
+    font-family: var(--fot2);
+    line-height: 90px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 22px;
+    transition: all linear .4s;
+}
+
+#navbar .navbar .menu-list ul li a:hover {
+    color: var(--col1);
+}
+
+#navbar .navbar .menu-list ul li a:last-child {
+    margin-right: 25px;
+}
+
+#navbar .navbar .social-icon {
+    width: 120px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#navbar .navbar .social-icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 30px;
+    background: #3b3941;
+    margin-top: 30px;
+}
+
+#navbar .navbar .social-icon a {
+    color: #fff;
+    margin-left: 18px;
+    line-height: 90px;
+    transition: all linear .4s;
+}
+
+#navbar .navbar .social-icon a:hover {
+    color: var(--col1);
+}
+
+
+
+
+/* =================
+    Navbar Css Ends
+================== */
+
+
+
+
+/* =================
+    Banner Css Start
+================== */
+
+#banner {
+    height: 700px;
+    background: url(../images/banner.jpg) no-repeat center /cover;
+}
+
+#banner .banner {
+    text-align: center;
+    height: 700px;
+    color: #fff;
+}
+
+#banner .banner h1 {
+    font-family: var(--fot2);
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 320px;
+}
+
+#banner .banner h4 {
+    font-family: var(--fot3);
+    font-weight: 300;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: -5px;
+}
+
+#banner .banner p {
+    font-family: var(--fot3);
+    font-weight: 300;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+
+/* =================
+    Banner Css Ends
+================== */
+
+
+/* =======================
+    Service-area Css Start
+====================== */
+
+
+#service {
+    height: 540px;
+    margin: 80px 0;
+}
+
+#service .service {
+    height: 540px;
+}
+
+#service .service .service-heading {
+    text-align: center;
+    height: 185px;
+}
+
+#service .service .service-heading h3 {
+    font-family: var(--fot3);
+    font-weight: 300;
+    font-size: 30px;
+    color: var(--col2);
+}
+
+#service .service .service-heading p {
+    font-family: var(--fot1);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--col3);
+    padding-top: 25px;
+}
+
+#service .service .service-heading h4 {
+    font-family: var(--fot2);
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 55px;
+    color: var(--col2);
+}
+
+#service .service .service-item {
+    height: 355px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#service .service .service-item .item {
+    width: 370px;
+    height: 355px;
+    border: 1px solid #e3e3e3;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#service .service .service-item .item img {
+    width: 100%;
+}
+
+#service .service .service-item .item h4 {
+    font-family: var(--fot3);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--col2);
+    padding-top: 20px;
+}
+
+#service .service .service-item .item p {
+    font-family: var(--fot1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px 7px 0;
+}
+
+/* =======================
+    Service Area Css Ends
+======================= */
+
+
+/* =======================
+    Gallery Area Css Start
+======================= */
+
+#gallery {
+    height: 590px;
+    background: var(--bgcol1);
+}
+
+#gallery .gallery-heading {
+    height: 125px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#gallery .gallery-heading h3 {
+    font-family: var(--fot2);
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 75px;
+    position: relative;
+}
+
+
+#gallery .gallery-heading h3::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    top: 8px;
+    left: 31%;
+    border: 1px solid #fff;
+    border-left: 0;
+    border-right: 0;
+}
+
+#gallery .gallery-heading h3::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    top: 8px;
+    right: 31%;
+    border: 1px solid #fff;
+    border-left: 0;
+    border-right: 0;
+}
+
+#gallery .gallery-image {
+    display: flex;
+    height: 300px;
+}
+
+
+#gallery .gallery-image div {
+    width: 22.75%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#gallery .gallery-image div::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#gallery .gallery-image div:hover::after {
+    background: rgba(40, 183, 215, .4);
+    animation: overlay 1s;
+}
+
+@keyframes overlay {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+#gallery .gallery-image div:last-child {
+    width: 9%;
+}
+
+#gallery .gallery-image img {
+    width: 100%;
+    height: 100%;
+}
+
+#gallery .gallery-button {
+    height: 165px;
+    text-align: center;
+}
+
+#gallery .gallery-button a {
+    font-family: var(--fot1);
+    font-weight: 400;
+    font-size: 14px;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border: 1px solid #a6a6a6;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 40px;
+    transition: all linear .4s;
+}
+
+
+#gallery .gallery-button a:hover {
+    color: #fff;
+    background: var(--col1);
+    border-color: var(--col1);
+}
+
+/* =======================
+    Gallery Area Css Ends
+======================= */
+
+/* =======================
+    Journal Css Start
+======================= */
+
+#journal {
+    height: 500px;
+    margin: 80px 0;
+}
+
+#journal .journal {
+    height: 500px;
+}
+
+#journal .journal .journal-heading {
+    height: 45px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#journal .journal .journal-heading h3 {
+    font-family: var(--fot2);
+    font-size: 18px;
+    color: var(--col2);
+    text-transform: uppercase;
+    position: relative;
+}
+
+#journal .journal .journal-heading h3::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    top: 8px;
+    left: 34%;
+    border: 1px solid #d9d9d9;
+    border-left: 0;
+    border-right: 0;
+}
+
+#journal .journal .journal-heading h3::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    top: 8px;
+    right: 34%;
+    border: 1px solid #d9d9d9;
+    border-left: 0;
+    border-right: 0;
+}
+
+
+#journal .journal .journal-item {
+    height: 455px;
+    display: flex;
+}
+
+#journal .journal .journal-item .item {
+    width: 370px;
+    height: 455px;
+    text-align: center;
+    border: 1px solid #e3e3e3;
+    box-sizing: border-box;
+    padding: 20px 0 0;
+}
+
+#journal .journal .journal-item .item h4 {
+    font-family: var(--fot3);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--col2);
+    padding-bottom: 5px;
+}
+
+#journal .journal .journal-item .item small {
+    font-family: var(--fot1);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--col4);
+}
+
+#journal .journal .journal-item .item img {
+    width: 100%;
+    padding-top: 20px;
+}
+
+#journal .journal .journal-item .item p {
+    font-family: var(--fot1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    padding: 25px;
+    color: var(--col3);
+}
+
+#journal .journal .journal-item .item .item-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+#journal .journal .journal-item .item .item-footer a {
+    font-family: var(--fot1);
+    font-weight: 400;
+    font-size: 11px;
+    color: var(--col4);
+    text-transform: uppercase;
+    text-decoration: underline;
+    transition: all linear .4s;
+}
+
+#journal .journal .journal-item .item .item-footer a:hover {
+    color: var(--col1);
+}
+
+#journal .journal .journal-item .item .item-footer .icon {
+    font-family: var(--fot1);
+    font-weight: 400;
+    font-size: 11px;
+    color: var(--col4);
+    text-decoration: none;
+}
+
+
+/* =======================
+    Journal Css Ends
+======================= */
+
+
+/* =======================
+    About Css Start
+======================= */
+
+#about {
+    height: 410px;
+}
+
+#about .about {
+    height: 410px;
+    display: flex;
+}
+
+#about .about .about-me-left {
+    width: 570px;
+    height: 410px;
+}
+
+#about .about .about-me-heading {
+    height: 45px;
+    overflow: hidden;
+}
+
+#about .about .about-me-heading h3 {
+    font-family: var(--fot2);
+    font-size: 18px;
+    color: var(--col2);
+    text-transform: uppercase;
+    position: relative;
+}
+
+#about .about .about-me-heading h3::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    top: 8px;
+    left: 29%;
+    border: 1px solid #d9d9d9;
+    border-left: 0;
+    border-right: 0;
+}
+
+
+#about .about .about-me-left .about-me-image {
+    width: 200px;
+    float: left;
+    margin-right: 25px;
+}
+
+#about .about .about-me-left .about-me-image img {
+    width: 100%;
+}
+
+#about .about .about-me-left .about-me-text {
+    width: 345px;
+    float: left;
+}
+
+#about .about .about-me-left .about-me-text h5 {
+    font-family: var(--fot3);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--col3);
+    padding-bottom: 15px;
+}
+
+#about .about .about-me-left .about-me-text p {
+    font-family: var(--fot1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--col3);
+}
+
+#about .about .about-me-right {
+    width: 570px;
+    height: 410px;
+}
+
+#about .about .about-me-right .about-me-heading h3::after {
+    content: "";
+    left: 20%;
+}
+
+
+#about .about .about-me-right .about-service {
+    height: 365px;
+    width: 100%;
+}
+
+#about .about .about-me-right .about-service .item {
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+#about .about .about-me-right .about-service .item .about-service-icon {
+    width: 70px;
+}
+
+#about .about .about-me-right .about-service .item .about-service-icon i {
+    margin-left: 5px;
+    color: #2fbad9;
+    margin-top: 5px;
+}
+
+#about .about .about-me-right .about-service .item .about-service-text {
+    width: 500px;
+    height: 100%;
+}
+
+#about .about .about-me-right .about-service .item .about-service-text h4 {
+    font-family: var(--fot3);
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: var(--col2);
+}
+
+#about .about .about-me-right .about-service .item .about-service-text p {
+    font-family: var(--fot1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--col3);
+    padding-top: 5px;
+}
+
+
+
+/* =======================
+    About Css Ends
+======================= */
+
+
+
+/* =======================
+    Footer Top Css Starts
+======================= */
+
+#footer-top {
+    height: 250px;
+    background: var(--bgcol2);
+    padding: 60px 0;
+}
+
+#footer-top .footer-top {
+    height: 250px;
+}
+
+#footer-top .footer-top .footer-item {
+    color: #cacaca;
+    display: flex;
+}
+
+#footer-top .footer-top .footer-item .item {
+    width: 292.5px;
+}
+
+#footer-top .footer-top .footer-item .item .item-heading {
+    height: 40px;
+}
+
+#footer-top .footer-top .footer-item .item .item-heading h4 {
+    font-family: var(--fot2);
+    font-size: 16px;
+    color: #f0f0f0;
+    text-transform: uppercase;
+}
+
+
+#footer-top .footer-top .footer-item .item-one .item-content p {
+    padding-right: 10px;
+    padding-bottom: 25px;
+}
+
+#footer-top .footer-top .footer-item .item p {
+    font-family: var(--fot1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#footer-top .footer-top .footer-item .item-one .item-address div {
+    display: flex;
+}
+
+#footer-top .footer-top .footer-item .item-one .item-address div .icon {
+    width: 25px;
+}
+
+#footer-top .footer-top .footer-item .item-one .item-address div .icon i {
+    margin-top: 5px;
+}
+
+#footer-top .footer-top .footer-item .item-one .item-address div .text p {
+    padding-right: 70px;
+}
+
+
+#footer-top .footer-top .footer-item .item-two .item-content p {
+    padding-right: 25px;
+}
+
+
+#footer-top .footer-top .footer-item .item-three .item-content p {
+    padding-right: 44px;
+}
+
+
+#footer-top .footer-top .footer-item .item-three .item-content small {
+    font-family: var(--fot1);
+    font-weight: 400;
+    font-size: 12px;
+    display: block;
+    padding-bottom: 25px;
+}
+
+
+#footer-top .footer-top .footer-item .item-three .item-content small:last-child {
+    padding: 0;
+}
+
+
+#footer-top .footer-top .footer-item .item-four .item-content p {
+    padding-right: 48px;
+    padding-bottom: 20px;
+}
+
+/* =======================
+    Footer Top Css Ends
+======================= */
+
+
+
+/* =========================
+    Footer Bottom Css Starts
+========================= */
+
+#footer-bottom {
+    height: 90px;
+    background: #333;
+}
+
+#footer-bottom .footer-bottom {
+    height: 90px;
+}
+
+#footer-bottom .footer-bottom p {
+    color: #cacaca;
+    line-height: 90px;
+}
+
+#footer-bottom .footer-bottom p a {
+    color: #cacaca;
+    transition: all linear .4s;
+}
+
+#footer-bottom .footer-bottom p a:hover {
+    color: var(--col1);
+}
+
+/* =======================
+    Footer Bottom Css Ends
+======================= */
