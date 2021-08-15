@@ -111,7 +111,12 @@ img {
     text-transform: uppercase;
     color: #fff;
     margin: 0 22px;
+    display: block;
     transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
 }
 
 #navbar .navbar .menu-list ul li a:hover {
@@ -146,6 +151,10 @@ img {
     margin-left: 18px;
     line-height: 90px;
     transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
 }
 
 #navbar .navbar .social-icon a:hover {
@@ -364,6 +373,7 @@ img {
 #gallery .gallery-image div:hover::after {
     background: rgba(40, 183, 215, .4);
     animation: overlay 1s;
+    -webkit-animation: overlay 1s;
 }
 
 @keyframes overlay {
@@ -402,6 +412,10 @@ img {
     box-sizing: border-box;
     margin-top: 40px;
     transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
 }
 
 
@@ -525,6 +539,10 @@ img {
     text-transform: uppercase;
     text-decoration: underline;
     transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
 }
 
 #journal .journal .journal-item .item .item-footer a:hover {
