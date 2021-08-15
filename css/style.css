@@ -821,6 +821,10 @@ img {
 #footer-bottom .footer-bottom p a {
     color: #cacaca;
     transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
 }
 
 #footer-bottom .footer-bottom p a:hover {
