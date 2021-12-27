@@ -14,7 +14,105 @@
     Extra Small Device Starts
 ===============================*/
 
-@media (max-width:575px) {}
+@media (max-width:575px) {
+    header .logo {
+        line-height: 60px !important;
+    }
+
+    header .menu-list {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 5px 0;
+        background: rgba(0, 0, 0, 0.7);
+        border-top: 1px solid #a6a6a6;
+        border-bottom: 1px solid #a6a6a6;
+        visibility: hidden;
+        transition: all linear .4s;
+        opacity: 0;
+    }
+
+    header .menu .social-icon a {
+        margin-left: 10px;
+    }
+
+    header .menu .menu-list a {
+        display: block;
+        margin: 0;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 3px;
+    }
+
+    header .menu .menu-list a:hover {
+        background: var(--col1);
+        color: #fff;
+    }
+
+    .add {
+        visibility: visible !important;
+        top: 60px !important;
+        opacity: 1 !important;
+    }
+
+    /* Menu Ends  */
+
+    #banner .banner h1 {
+        font-size: 35px;
+    }
+
+    #banner .banner h4 {
+        font-size: 25px;
+    }
+
+    /* Banner Ends  */
+
+
+    #service .service .service-heading h3 {
+        font-size: 20px;
+    }
+
+    /* Service Area Ends  */
+
+    #gallery {
+        padding: 50px 0;
+    }
+
+    #gallery .gallery-heading {
+        width: 100%;
+    }
+
+    #gallery .gallery-heading h3::before,
+    #gallery .gallery-heading h3::after {
+        content: unset;
+    }
+
+    /* Gallery Area Ends  */
+
+    #journal {
+        margin: 50px 0;
+    }
+
+    #journal .journal .journal-heading {
+        width: 100%;
+    }
+
+
+    #journal .journal .journal-heading h3::before,
+    #journal .journal .journal-heading h3::after {
+        content: unset;
+    }
+
+    /* Journal Ends  */
+
+
+    #about {
+        margin-bottom: 50px;
+    }
+
+    /* About Ends  */
+}
 
 /* ==========================
     Extra Small Device Ends
@@ -24,7 +122,79 @@
        Small Device Starts
 ==========================*/
 
-@media (min-width:576px) and (max-width:767px) {}
+@media (min-width:576px) and (max-width:767px) {
+    header .logo {
+        line-height: 60px !important;
+    }
+
+    header .menu-list {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 5px 0;
+        background: rgba(0, 0, 0, 0.7);
+        border-top: 1px solid #a6a6a6;
+        border-bottom: 1px solid #a6a6a6;
+        visibility: hidden;
+        transition: all linear .4s;
+        opacity: 0;
+    }
+
+    header .menu .menu-list a {
+        display: block;
+        margin: 0;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 3px;
+    }
+
+    header .menu .menu-list a:hover {
+        background: var(--col1);
+        color: #fff;
+    }
+
+    .add {
+        visibility: visible !important;
+        top: 60px !important;
+        opacity: 1 !important;
+        /* z-index: -1; */
+    }
+
+    /* Menu Ends  */
+
+    #banner {
+        padding-top: 300px;
+        padding-bottom: 220px;
+    }
+
+    /* Banner Ends  */
+
+    #service .service .service-heading h3 {
+        font-size: 25px;
+    }
+
+    /* Service Area Ends  */
+
+    #gallery {
+        padding: 50px 0;
+    }
+
+    /* Gallery Area Ends  */
+
+    #journal {
+        margin: 50px 0;
+    }
+
+    /* Journal Ends  */
+
+    #about {
+        margin-bottom: 50px;
+    }
+
+    /* About Ends  */
+
+}
 
 /* =======================
        Small Device Ends
@@ -42,7 +212,7 @@
 
     header .menu-list {
         position: absolute;
-        top: -700%;
+        top: 50px;
         left: 0;
         width: 100%;
         padding: 5px 0;
@@ -51,6 +221,7 @@
         border-bottom: 1px solid #a6a6a6;
         visibility: hidden;
         transition: all linear .4s;
+        opacity: 0;
     }
 
     header .menu .menu-list a {
@@ -65,6 +236,52 @@
         background: var(--col1);
         color: #fff;
     }
+
+    .add {
+        visibility: visible !important;
+        top: 60px !important;
+        opacity: 1 !important;
+    }
+
+    /* Menu Ends  */
+
+    #banner {
+        padding-top: 310px;
+        padding-bottom: 220px;
+    }
+
+    /* Banner Ends  */
+
+    #service .service .service-heading h3 {
+        font-size: 28px;
+    }
+
+    #service .service .service-item .item {
+        padding: 10px;
+    }
+
+    /* Service Area Ends  */
+
+    #journal .journal .journal-item .item p {
+        padding: 10px;
+    }
+
+    #journal .journal .journal-item .item .item-footer {
+        padding: 0 10px;
+    }
+
+    /* Journal Ends  */
+
+    #footer-top .footer-top .footer-item .item-three .item-content small {
+        padding-bottom: 20px;
+    }
+
+    #footer-top .footer-top .footer-item .item-four .item-content p {
+        padding-bottom: 10px;
+    }
+
+    /* Footer Top Ends  */
+
 }
 
 /* ============================

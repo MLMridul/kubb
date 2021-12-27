@@ -130,7 +130,7 @@ img {
 header {
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 99999;
     transition: all linear .4s;
     -webkit-transition: all linear .4s;
@@ -176,6 +176,12 @@ header .menu .small-menu {
     padding: 7px;
     border-radius: 2px;
     cursor: pointer;
+    transition: all linear .4s;
+}
+
+header .menu .small-menu:hover {
+    background: var(--col1);
+    border-color: var(--col1);
 }
 
 header .menu .social-icon {
@@ -367,6 +373,8 @@ header .menu .social-icon a:hover {
 #gallery .gallery-heading {
     text-align: center;
     padding-bottom: 30px;
+    width: 430px;
+    margin: 0 auto;
 }
 
 #gallery .gallery-heading h3 {
@@ -384,7 +392,7 @@ header .menu .social-icon a:hover {
     width: 100px;
     height: 4px;
     top: 8px;
-    left: 18px;
+    left: 0px;
     border: 1px solid #fff;
     border-left: 0;
     border-right: 0;
@@ -396,7 +404,7 @@ header .menu .social-icon a:hover {
     width: 100px;
     height: 4px;
     top: 8px;
-    right: 18px;
+    right: 0px;
     border: 1px solid #fff;
     border-left: 0;
     border-right: 0;
@@ -487,9 +495,9 @@ header .menu .social-icon a:hover {
     margin: 80px 0;
 }
 
-#journal .journal {}
 
 #journal .journal .journal-heading {
+    width: 380px;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 25px;
@@ -610,9 +618,6 @@ header .menu .social-icon a:hover {
     margin-bottom: 80px;
 }
 
-#about .about {}
-
-#about .about .about-me-left {}
 
 #about .about .about-me-heading {
     margin-bottom: 25px;
@@ -640,11 +645,6 @@ header .menu .social-icon a:hover {
 }
 
 
-#about .about .about-me-left .about-me-image {}
-
-#about .about .about-me-left .about-me-image img {}
-
-#about .about .about-me-left .about-me-text {}
 
 #about .about .about-me-left .about-me-text h5 {
     font-family: var(--fot3);
@@ -663,15 +663,11 @@ header .menu .social-icon a:hover {
     color: var(--col3);
 }
 
-#about .about .about-me-right {}
 
 #about .about .about-me-right .about-me-heading h3::after {
     content: "";
-    left: 20%;
+    left: 115px;
 }
-
-
-#about .about .about-me-right .about-service {}
 
 #about .about .about-me-right .about-service .item {
     display: flex;
@@ -687,8 +683,6 @@ header .menu .social-icon a:hover {
     margin-left: 5px;
     margin-top: 5px;
 }
-
-#about .about .about-me-right .about-service .item .about-service-text {}
 
 #about .about .about-me-right .about-service .item .about-service-text h4 {
     font-family: var(--fot3);
@@ -724,13 +718,10 @@ header .menu .social-icon a:hover {
     padding: 60px 0;
 }
 
-#footer-top .footer-top {}
 
 #footer-top .footer-top .footer-item {
     color: #cacaca;
 }
-
-#footer-top .footer-top .footer-item .item {}
 
 #footer-top .footer-top .footer-item .item .item-heading {
     margin-bottom: 15px;
@@ -804,6 +795,10 @@ header .menu .social-icon a:hover {
     padding-bottom: 20px;
 }
 
+#footer-top .footer-top .footer-item .item-four .item-content p:last-of-type {
+    padding-bottom: 0;
+}
+
 /* =======================
     Footer Top Css Ends
 ======================= */
@@ -818,8 +813,6 @@ header .menu .social-icon a:hover {
     background: #333;
     padding: 33px 0;
 }
-
-#footer-bottom .footer-bottom {}
 
 #footer-bottom .footer-bottom p {
     color: #cacaca;

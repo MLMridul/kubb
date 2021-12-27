@@ -34,6 +34,8 @@ $(document).ready(function () {
         } else {
             $('.navbar-bg').removeClass('bg');
         }
+
+        $('.menu-list').removeClass("add");
     });
 
     // ScrollTop Button
@@ -53,15 +55,36 @@ $(document).ready(function () {
         arrows: false,
         autoplay: true,
         draggable: false,
+        responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            }, {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            }
+        ]
     })
 
     // Responsive Menu
 
     $(".small-menu").click(function () {
-        $('.menu-list').css({
-            'visibility': 'visible',
-            'top': '60px',
-        });
+        $('.menu-list').toggleClass("add");
     })
 
 
