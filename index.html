@@ -16,7 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -38,38 +38,37 @@
     ================ -->
 
     <!-- ============
-        Nabnar Starts
+        Menu Starts
     ============= -->
 
 
-    <nav class="navbar-bg d-none">
-        <div class="container navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Logo">
+    <header>
+        <div class="container">
+            <div class="d-flex menu align-items-center">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Logo.png">
                 </a>
-            </div>
-            <div class="menu-list">
-                <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">journel</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </div>
-            <div class="social-icon">
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                <nav class="ms-auto menu-list">
+                    <a href="#" class="text-uppercase">home</a>
+                    <a href="#" class="text-uppercase">about</a>
+                    <a href="#" class="text-uppercase">portfolio</a>
+                    <a href="#" class="text-uppercase">services</a>
+                    <a href="#" class="text-uppercase">journal</a>
+                    <a href="#" class="text-uppercase">contact</a>
+                </nav>
+                <i class="fa fa-bars small-menu d-inline-block d-lg-none ms-auto"></i>
+                <div class="social-icon">
+                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                </div>
             </div>
         </div>
-    </nav>
+    </header>
 
     <!-- ===========
-         Nabnar Ends 
+         Menu Ends 
     ============ -->
 
     <!-- =============
@@ -166,25 +165,30 @@
 
     <section id="gallery">
         <div class="container">
-            <div class="gallery-heading">
-                <h3 class="mb-0">Latest instagram shots</h3>
+            <div class="col-lg-5 mx-auto">
+                <div class="gallery-heading">
+                    <h3 class="mb-0">Latest instagram shots</h3>
+                </div>
             </div>
         </div>
         <div class="gallery-image">
-            <div class="mr-10">
+            <div class="gallery-item">
                 <img src="images/gallery-1.jpg" alt="Gallery-1">
             </div>
-            <div class="mr-10">
+            <div class="gallery-item">
                 <img src="images/gallery-2.jpg" alt="Gallery-2">
             </div>
-            <div class="mr-10">
+            <div class="gallery-item">
                 <img src="images/gallery-3.jpg" alt="Gallery-3">
             </div>
-            <div class="mr-10">
+            <div class="gallery-item">
                 <img src="images/gallery-4.jpg" alt="Gallery-4">
             </div>
-            <div>
+            <div class="gallery-item">
                 <img src="images/gallery-5.jpg" alt="Gallery-5">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery-3.jpg" alt="Gallery-3">
             </div>
         </div>
         <div class="gallery-button">
@@ -537,6 +541,7 @@
 
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/index.js"></script>
 
 

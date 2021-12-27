@@ -123,14 +123,13 @@ img {
 
 
 
-/* =================
-    Navbar Css sTART
-================== */
+/* ====================
+    Menu Css Starts
+==================== */
 
-.navbar-bg {
-    width: 100%;
-    height: 90px;
+header {
     background: rgba(0, 0, 0, 0.7);
+    width: 100%;
     position: absolute;
     z-index: 99999;
     transition: all linear .4s;
@@ -141,22 +140,9 @@ img {
 }
 
 
-.navbar-bg .navbar {
-    height: 90px;
-    display: flex;
-    transition: all linear .4s;
-    -webkit-transition: all linear .4s;
-    -moz-transition: all linear .4s;
-    -ms-transition: all linear .4s;
-    -o-transition: all linear .4s;
-}
 
-.navbar-bg .navbar .logo {
-    width: 100px;
-    height: 100%;
-}
 
-.navbar-bg .navbar .logo a {
+header .menu .logo {
     line-height: 90px;
     transition: all linear .4s;
     -webkit-transition: all linear .4s;
@@ -165,29 +151,13 @@ img {
     -o-transition: all linear .4s;
 }
 
-.navbar-bg .navbar .logo a img {
-    width: 100%;
-}
 
-.navbar-bg .navbar .menu-list {
-    width: 950px;
-}
-
-.navbar-bg .navbar .menu-list ul {
-    width: 950px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-.navbar-bg .navbar .menu-list ul li a {
+header .menu .menu-list a {
     font-family: var(--fot2);
-    line-height: 90px;
     font-size: 14px;
     text-transform: uppercase;
     color: #fff;
-    margin: 0 22px;
-    display: block;
+    margin: 0 20px;
     transition: all linear .4s;
     -webkit-transition: all linear .4s;
     -moz-transition: all linear .4s;
@@ -195,37 +165,38 @@ img {
     -o-transition: all linear .4s;
 }
 
-.navbar-bg .navbar .menu-list ul li a:hover {
+header .menu .menu-list a:hover {
     color: var(--col1);
 }
 
-.navbar-bg .navbar .menu-list ul li a:last-child {
-    margin-right: 25px;
+header .menu .small-menu {
+    margin: 0 18px;
+    border: 1px solid #a6a6a6;
+    color: #fff;
+    padding: 7px;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
-.navbar-bg .navbar .social-icon {
-    width: 120px;
+header .menu .social-icon {
     position: relative;
-    display: flex;
-    justify-content: flex-end;
+    padding-left: 7px;
 }
 
-
-.navbar-bg .navbar .social-icon::before {
+header .menu .social-icon::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     width: 1px;
     height: 30px;
     background: #3b3941;
-    margin-top: 30px;
 }
 
-.navbar-bg .navbar .social-icon a {
+
+header .menu .social-icon a {
     color: #fff;
     margin-left: 18px;
-    line-height: 90px;
     transition: all linear .4s;
     -webkit-transition: all linear .4s;
     -moz-transition: all linear .4s;
@@ -233,7 +204,7 @@ img {
     -o-transition: all linear .4s;
 }
 
-.navbar-bg .navbar .social-icon a:hover {
+header .menu .social-icon a:hover {
     color: var(--col1);
 }
 
@@ -260,7 +231,7 @@ img {
 }
 
 /* =================
-    Navbar Css Ends
+    Menu Css Ends
 ================== */
 
 
@@ -389,14 +360,13 @@ img {
 ======================= */
 
 #gallery {
-    height: 590px;
     background: var(--bgcol1);
+    padding: 80px 0;
 }
 
 #gallery .gallery-heading {
-    height: 125px;
     text-align: center;
-    overflow: hidden;
+    padding-bottom: 30px;
 }
 
 #gallery .gallery-heading h3 {
@@ -404,7 +374,6 @@ img {
     font-size: 18px;
     color: #fff;
     text-transform: uppercase;
-    margin-top: 75px;
     position: relative;
 }
 
@@ -415,7 +384,7 @@ img {
     width: 100px;
     height: 4px;
     top: 8px;
-    left: 31%;
+    left: 18px;
     border: 1px solid #fff;
     border-left: 0;
     border-right: 0;
@@ -427,7 +396,7 @@ img {
     width: 100px;
     height: 4px;
     top: 8px;
-    right: 31%;
+    right: 18px;
     border: 1px solid #fff;
     border-left: 0;
     border-right: 0;
@@ -435,13 +404,13 @@ img {
 
 #gallery .gallery-image {
     display: flex;
-    height: 300px;
 }
 
+#gallery .gallery-image .gallery-item {
+    margin: 0 5px;
+}
 
 #gallery .gallery-image div {
-    width: 22.75%;
-    height: 100%;
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -456,7 +425,7 @@ img {
     height: 100%;
 }
 
-#gallery .gallery-image div:hover::after {
+#gallery .gallery-image .gallery-item:hover::after {
     background: rgba(40, 183, 215, .4);
     animation: overlay 1s;
     -webkit-animation: overlay 1s;
@@ -472,18 +441,14 @@ img {
     }
 }
 
-#gallery .gallery-image div:last-child {
-    width: 9%;
-}
-
 #gallery .gallery-image img {
     width: 100%;
     height: 100%;
 }
 
 #gallery .gallery-button {
-    height: 165px;
     text-align: center;
+    padding-top: 40px;
 }
 
 #gallery .gallery-button a {
@@ -496,7 +461,6 @@ img {
     border: 1px solid #a6a6a6;
     display: inline-block;
     box-sizing: border-box;
-    margin-top: 40px;
     transition: all linear .4s;
     -webkit-transition: all linear .4s;
     -moz-transition: all linear .4s;
