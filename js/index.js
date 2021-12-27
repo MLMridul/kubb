@@ -30,9 +30,9 @@ $(document).ready(function () {
             });
         }
         if (scrooling > 300) {
-            $('.navbar-bg').addClass('bg');
+            $('header').addClass('bg');
         } else {
-            $('.navbar-bg').removeClass('bg');
+            $('header').removeClass('bg');
         }
 
         $('.menu-list').removeClass("add");

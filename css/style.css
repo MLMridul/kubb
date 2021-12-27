@@ -190,26 +190,10 @@ header .menu .social-icon a:hover {
 }
 
 .bg {
-    height: 80px;
     position: fixed;
     background: #000;
 }
 
-.bg .navbar {
-    height: 80px;
-}
-
-.bg .navbar .logo a {
-    line-height: 80px;
-}
-
-.bg .navbar .menu-list ul li a {
-    line-height: 80px;
-}
-
-.bg .navbar .social-icon a {
-    line-height: 80px;
-}
 
 /* =================
     Menu Css Ends
