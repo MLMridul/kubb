@@ -1,0 +1,72 @@
+:root {
+    --col1: #28b8d8;
+    --col2: #444444;
+    --col3: #666;
+    --col4: #999;
+    --bgcol1: #2c2c2c;
+    --bgcol2: #373737;
+    --fot1: 'Roboto', sans-serif;
+    --fot2: 'Roboto Condensed', sans-serif;
+    --fot3: 'Roboto Slab', serif;
+}
+
+/* ============================
+    Extra Small Device Starts
+===============================*/
+
+@media (max-width:575px) {}
+
+/* ==========================
+    Extra Small Device Ends
+============================*/
+
+/* ========================
+       Small Device Starts
+==========================*/
+
+@media (min-width:576px) and (max-width:767px) {}
+
+/* =======================
+       Small Device Ends
+========================*/
+
+
+/* ============================
+    Medium Device Starts
+===============================*/
+
+@media (min-width:768px) and (max-width:991px) {
+    header .logo {
+        line-height: 60px !important;
+    }
+
+    header .menu-list {
+        position: absolute;
+        top: -700%;
+        left: 0;
+        width: 100%;
+        padding: 5px 0;
+        background: rgba(0, 0, 0, 0.7);
+        border-top: 1px solid #a6a6a6;
+        border-bottom: 1px solid #a6a6a6;
+        visibility: hidden;
+        transition: all linear .4s;
+    }
+
+    header .menu .menu-list a {
+        display: block;
+        margin: 0;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 3px;
+    }
+
+    header .menu .menu-list a:hover {
+        background: var(--col1);
+        color: #fff;
+    }
+}
+
+/* ============================
+    Medium Device Ends
+===============================*/

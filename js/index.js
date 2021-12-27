@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     // Preloader
 
     $(window).on("load", function () {
@@ -35,11 +36,15 @@ $(document).ready(function () {
         }
     });
 
+    // ScrollTop Button
+
     $('.scrollTop').click(function () {
         $('html,body').animate({
             scrollTop: '0',
         }, 1500)
     })
+
+    // Gallery Slider
 
     $('.gallery-image').slick({
         infinite: true,
@@ -49,5 +54,16 @@ $(document).ready(function () {
         autoplay: true,
         draggable: false,
     })
+
+    // Responsive Menu
+
+    $(".small-menu").click(function () {
+        $('.menu-list').css({
+            'visibility': 'visible',
+            'top': '60px',
+        });
+    })
+
+
 
 })
