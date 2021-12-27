@@ -35,30 +35,6 @@ img {
 ================== */
 
 
-/* spacing Css */
-
-
-.mr-10 {
-    margin-right: 10px;
-}
-
-.m-30 {
-    margin: 0 30px;
-}
-
-.mr-30 {
-    margin-right: 30px;
-}
-
-.p-25 {
-    padding: 25px 0;
-}
-
-.p-0 {
-    padding: 0 !important;
-}
-
-
 /*  ==================
   Preloader Css Start
 =================== */
@@ -69,7 +45,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
 }
 
 .preloader span:first-of-type {
